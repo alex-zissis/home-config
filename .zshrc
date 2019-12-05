@@ -3,7 +3,8 @@ PROMPT=%{%f%}$(build_prompt)
 export PATH=$HOME/bin:/usr/local/bin:$PATH:/opt/flutter/bin:$HOME/.scripts
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/alexzissis/.oh-my-zsh"
+HOMEDIR=$HOME
+export ZSH="$HOMEDIR/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
