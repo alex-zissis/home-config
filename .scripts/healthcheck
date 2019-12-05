@@ -1,0 +1,15 @@
+#!/bin/bash
+uri=$1
+
+if [ -z $uri ]; then
+    echo -e "\nError: URI was not defined\n"
+    exit 1
+fi
+
+http_code=$(curl -so /dev/null -w '%{http_code}\n' $uri)
+echo $http_code
+
+if [ $http_code -ne "200" ]; then 
+    echo -e "\n$http_code - Error returned from $uri"
+    exit 1
+fi
