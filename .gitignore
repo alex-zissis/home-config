@@ -1,0 +1,7 @@
+*
+
+!.gitignore
+!.zshrc
+!.vimrc
+!.bashrc
+!.scripts/*
