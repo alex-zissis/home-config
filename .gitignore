@@ -3,5 +3,5 @@
 !.gitignore
 !.zshrc
 !.vimrc
-!.bashrc
+!.bash_profile
 !.scripts/*
